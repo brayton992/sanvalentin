@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Feliz San Valentín 💖</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Fondo con partículas (corazones/“flores”) -->
+  <div class="floating" aria-hidden="true"></div>
+
+  <!-- Pantalla 1 -->
+  <main class="hero" id="top">
+    <div class="card">
+      <h1>Feliz San Valentín <span class="heart">❤</span></h1>
+      <p>Un detalle especial para ti</p>
+
+      <button id="btnSurprise" class="btn">Ver sorpresa</button>
+
+      <div class="dots" aria-hidden="true">
+        <span></span><span></span><span></span><span></span>
+      </div>
+
+      <div class="hint">⬇ Desliza</div>
+    </div>
+  </main>
+
+  <!-- Pantalla 2 -->
+  <section class="letterSection" id="letter">
+    <div class="envelopeWrap">
+      <button id="openLetter" class="envelope" aria-label="Abrir carta">
+        <div class="envTop"></div>
+        <div class="envBody"></div>
+        <div class="seal">💌</div>
+      </button>
+
+      <article id="letterCard" class="letter" aria-live="polite">
+        <h2>Para ti 💖</h2>
+        <p id="msg">
+          Hoy solo quiero recordarte lo especial que eres para mí.
+          Gracias por tu forma de ser, por tu sonrisa y por estar.
+        </p>
+
+        <p class="signature">
+          Con cariño,<br>
+          <span id="firma">Tu nene</span>
+        </p>
+
+        <div class="actions">
+          <button id="moreHearts" class="btn small">Más amor ✨</button>
+          <button id="copyLink" class="btn ghost small">Copiar link</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Música (se reproduce cuando el usuario toca un botón) -->
+  <audio id="music" loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
